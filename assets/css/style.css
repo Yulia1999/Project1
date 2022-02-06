@@ -397,10 +397,12 @@ font-weight: 400;
 font-family: "Roboto";
 text-align: center;
 }
-.posts-item__image img{
-	display: block;
+.posts-item__image {
+	display: flex;
+	align-items: center;
+	justify-content: center;
 	width: 100%;
-	padding-right: 0;
+	padding: 0;
 	margin:0;
 }
 .posts-item__link{
@@ -408,8 +410,6 @@ text-align: center;
 }
 .posts-item {
 	background-color: #eeeeee;
-	padding:0;
-	margin: 0;
 	width: 100%;
   }
   .posts__content {
@@ -437,7 +437,27 @@ text-align: center;
 	grid-area: a6;
   }
  
-
+.footer{
+	background: #2d3651;
+	height: 250px;
+}
+.footer__name{
+	padding-top: 130px;
+	font-size: 16px;
+	line-height: 20px;
+	font-family: "Roboto", serif;
+	text-align: center;
+}
+.footer__name-first{
+	color: rgb(99, 117, 136);
+	letter-spacing: 4px;
+	font-weight: 100;
+}
+.footer__name-second{
+	color: white;
+	font-weight: 700;
+	letter-spacing: 1px;
+}
 @media (min-height: 691px) {
   .skills__container {
     grid-auto-rows: calc(33.333vh - 13.333px);
